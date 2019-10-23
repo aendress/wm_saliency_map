@@ -1,15 +1,17 @@
-There are 3 kinds of m files:
+# A saliency map for Working Memory and Number Processing
 
-      1. Basic network functions. These functions provide the basic model. Instead of having different m files,
-          this could be thought of as different arguments to the function.
+The files below are matlab reimplimentations for the model that appear in
+* Knops, A., Piazza, M., Sengupta, R., Eger, E., & Melcher, D. (2014). A shared, flexible neural map architecture reflects capacity limits in both visual short-term memory and enumeration. *Journal of Neuroscience*, 34(30), 9857–9866. doi: 10.1523/JNEUROSCI.2758-13.2014
+* Sengupta, R., Surampudi, B. R., & Melcher, D. (2014). A visual sense of number emerges from the dynamics of a recurrent on-center off-surround neural network. *Brain Research*, 1582, 114–124. doi: 10.1016/j.brainres.2014.03.014
 
-       2. Wrapper functions. These function just launch the basic network functions, but collect their output so the network
-          function can be used in a parfor loop using the paralellel processing toolbox. 
+There are 3 kinds of *m* files:
 
-       3. Launching functions. These functions call the basic network functions or the wrappers, and generate some figures
+1. Basic network functions. These functions provide the basic model. Instead of having different m files, this could be thought of as different arguments to the function.
+2. Wrapper functions. These function just launch the basic network functions, but collect their output so the network function can be used in a parfor loop using the paralellel processing toolbox. 
+3. Launching functions. These functions call the basic network functions or the wrappers, and generate some figures
 
 
-1. Basic network functions 
+## 1. Basic network functions 
 
 knops.m
 	This is the basic model. It provides a function that runs that the simulations, and returns the mean activation, the mean faithfulness, and the summed inhibition
@@ -49,7 +51,7 @@ There are a number of variations of these functions.
 		Identical to knops.m, but supports additional activation functions 
 	        Last modified: May 19 2019
 
-2. Wrapper functions
+## 2. Wrapper functions
 
 knops_wrapper.m
 	Calls knops.m
@@ -61,7 +63,7 @@ knops_large_network_wrapper.m
 knops_multiple_activation_functions_wrapper.m
 	Calls knops_multiple_activation_functions.m
 
-3. Launching functions 
+## 3. Launching functions 
 
 
    knops_launcher.m
