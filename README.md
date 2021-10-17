@@ -1,5 +1,7 @@
 # A saliency map for Working Memory and Number Processing
 
+Code for the working memory model in Endress, A.D. & Szabó, S. (2020). Sequential presentation protects memory from catastrophic interference. Cognitive Science, 44(5), e12828, doi: 10.1111/cogs.12828
+
 The files below are matlab reimplimentations for the model that appear in
 * Knops, A., Piazza, M., Sengupta, R., Eger, E., & Melcher, D. (2014). A shared, flexible neural map architecture reflects capacity limits in both visual short-term memory and enumeration. *Journal of Neuroscience*, 34(30), 9857–9866. doi: 10.1523/JNEUROSCI.2758-13.2014
 * Sengupta, R., Surampudi, B. R., & Melcher, D. (2014). A visual sense of number emerges from the dynamics of a recurrent on-center off-surround neural network. *Brain Research*, 1582, 114–124. doi: 10.1016/j.brainres.2014.03.014
